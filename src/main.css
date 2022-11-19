@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .barre { 
+        @apply bg-slate-400 w-9 h-[3px] rounded-md;
+    }
+}

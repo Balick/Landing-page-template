@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/output.css">
+    <title>Tailwindcss</title>
+</head>
+<body class="relative">
+    <!------------------------------ this is navbar ---------------------------------->
+    <div class="flex justify-between items-center px-8 py-4 bg-black absolute left-0 right-0 top-0 text-white z-30">
+        <header class="text-3xl">
+            StarLink
+        </header>
+        <button class="flex items-center gap-4">
+            <div class="flex flex-col gap-3">
+                <div class="barre"></div>
+                <div class="barre"></div>
+            </div>
+            <span class="text-sm">MENU</span>
+        </button>
+    </div>
+    <!------------------------------ end of navbar ---------------------------------->
+
+    <!------------------------------ this is main content ---------------------------------->
+    <div class="h-[900px] bg-universe bg-fixed bg-cover relative">
+        <div class="absolute inset-0 bg-[#0000008c]"></div>
+        <!------------------------------ aside element ---------------------------------->
+        <div class="absolute left-0 top-0 bottom-0 pl-8 hidden lg:block">
+            <div class="relative h-full flex flex-col justify-center items-start">
+                <span class="absolute bg-white h-full w-[1px]"></span>
+                <span class="relative text-white block rotate-90 ml-[-79px] bg-black px-4">
+                    Travel with StarLink
+                </span>
+            </div>
+        </div>
+        <!--------------------------- end of aside element ------------------------------>
+        <!------------------------------ landing page ---------------------------------->
+        <div class="text-white z-10 absolute top-0 right-0 left-0 md:left-8 md:right-8">
+            <div class="pt-32 pb-8 mx-8 lg:mr-0 lg:ml-36 flex flex-wrap gap-8 
+            justify-between items-center border-b border-r">
+                <div>
+                    <h2 class="text-slate-300">Engineered by SpaceX</h2>
+                    <h1 class="text-4xl font-bold md:text-6xl lg:text-8xl">Leader in Space <br> Sustainability</h1>
+                </div>
+                <p class="lg:w-[26rem] pr-8 lg:pr-36 text-slate-300">
+                    StarLink provides high-speed, low-latency broadband across the
+                    globe. Within each coverage area, orders are fullfilled on a first-come,
+                    first-served basis.
+                </p>
+                <div class="w-full h-1 -mb-16 relative">
+                    <div class="bg-white h-1 w-[10%] rounded-lg absolute top-0"></div>
+                    <div class="flex justify-between py-10 border-b">
+                        <button>PREV</button>
+                        <button>NEXT</button>
+                    </div>
+                    <!-------------- circle --------------->
+                    <div class="w-24 h-24 border-white border-2 rounded-full absolute -bottom-36 right-16 lg:right-36"></div>
+                    <!---------- end of circle ------------>
+                    <div class="pt-16 text-[#a29a2c]">
+                        <h3 class="text-2xl md:text-3xl lg:text-4xl">Streaming, Video Calls</h3>
+                        <small class="block md:w-80 pt-4 font-semibold">With StarLink, users can engage in activities that historically have not been possible with
+                            satellite internet.
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-------------------------- end of landing page ------------------------------>
+    </div>
+    <!------------------------------ end of main content ---------------------------------->
+</body>
+</html>
